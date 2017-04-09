@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ITCS NEWSAPP</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<!-- For-Mobile-Apps-and-Meta-Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="NEWS APP" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //For-Mobile-Apps-and-Meta-Tags -->
+	</head>
+	<body class="inner">
+		<!----- tabs-box ---->
+		
+		<div class="tabs-box">
+		<center><img src="images/logo.png"></center><br>
+		<center><h3><font color="white"><b>NEWS ONLINE OF YOUR LANGUAGE<br><br>CLICK ON IMAGE TO VIEW NEWS ONLINE</b></font></h3></center><br>
+			<ul class="tabs-menu">
+				<li><a href="#tab1">ENGLISH</a></li>
+				<li><a href="#tab2">HINDI</a></li>
+				<li><a href="#tab3">TAMIL</a></li>
+				<li><a href="#tab4">WORLD</a></li>
+				<li><a href="#tab5" class="special">STOCK</a></li>
+				<div class="clearfix"></div>
+			</ul>
+			<div class="clearfix"> </div>
+			<div class="tab-grids">
+				<div id="tab1" class="tab-grid">
+					<div class="movie1">
+						<a href="http://www.timesnow.tv/" target="_blank"><img src="images/timesnow.png"></a>
+						
+					</div>
+					<div class="movie2">
+						<a href="http://www.news18.com/" target="_blank"><img src="images/cnnibn.jpg"></a>
+						
+					</div>
+					<div class="movie3">
+						<a href="http://indiatoday.intoday.in/" target="_blank"><img src="images/indiatoday.jpg"></a>
+						
+					</div>
+					<div class="movie4">
+						<a href="http://www.ndtv.com/" target="_blank"><img src="images/ndtv.jpg"></a>
+						
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+				<div id="tab2" class="tab-grid">
+					<div class="movie1">
+						<a href="http://aajtak.intoday.in/" target="_blank"><img src="images/aajtak.jpg"></a>
+						
+					</div>
+					<div class="movie2">
+						<a href="http://zeenews.india.com/" target="_blank"><img src="images/zeenews.jpg"></a>
+						
+					</div>
+					<div class="movie3">
+						<a href="https://khabar.ndtv.com/videos/live/channel/ndtvindia" target="_blank"><img src="images/ndtvindia.jpg"></a>
+						
+					</div>
+					<div class="movie4">
+						<a href="http://www.abplive.in/live-tv" target="_blank"><img src="images/abp.jpg"></a>
+						
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div id="tab3" class="tab-grid">
+					<div class="movie1">
+						<a href="http://tv.puthiyathalaimurai.com/" target="_blank"><img src="images/puthiya.jpg"></a>
+						
+					</div>
+					<div class="movie2">
+						<a href="http://www.thanthitv.com/" target="_blank"><img src="images/thanti.jpg"></a>
+						
+					</div>
+					<div class="movie3">
+						<a href="http://www.sunnewslive.in/" target="_blank"><img src="images/sunnews.jpg"></a>
+						
+					</div>
+					<div class="movie4">
+						<a href="http://polimernews.com/" target="_blank"><img src="images/polimer.jpg"></a>
+						
+					</div>
+					<div class="clearfix"></div>
+				</div>
+					<div id="tab4" class="tab-grid">
+					<div class="movie1">
+						<a href="http://www.bbc.com/news/world" target="_blank"><img src="images/bbc.jpg"></a>
+						
+					</div>
+					<div class="movie2">
+						<a href="http://www.foxnews.com/world.html"><img src="images/fox.jpg"></a>
+						
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+					<div id="tab5" class="tab-grid">
+					<div class="movie1">
+						<a href="http://profit.ndtv.com/" target="_blank"><img src="images/ndtvprofit.jpg"></a>
+						
+					</div>
+					<div class="movie2">
+						<a href="http://economictimes.indiatimes.com/et-now/et-now-live" target="_blank"><img src="images/et.jpg"></a>
+						
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!----- tabs-box ---->
+		<!----- Comman-js-files ----->
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#tab2").hide();
+				$("#tab3").hide();
+				$("#tab4").hide();
+				$("#tab5").hide();
+				$(".tabs-menu a").click(function(event){
+					event.preventDefault();
+					var tab=$(this).attr("href");
+					$(".tab-grid").not(tab).css("display","none");
+					$(tab).fadeIn("slow");
+				});
+			});
+		</script>
+		<!----- Comman-js-files ----->
+	</body>
+	<center><font color="white">&copy; 2017. Design and Development by <a href="http://www.itcoordinates.com" target="_blank"><font color="white">ITCoordinates</font></a>. All Rights Reserved.</font></center>
+</html>
+
